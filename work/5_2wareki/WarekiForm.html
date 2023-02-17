@@ -1,0 +1,27 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <h1>和暦西暦変換</h1>
+  <h2>和暦を入力すると、西暦が表示されます</h2>
+  <!-- action属性, method属性を指定 -->
+  <form action="WarekiGet.php" method="get">
+    <!-- name属性を指定 -->
+    <p>和暦 
+      <select name="Wareki">
+        <option value="明治">明治</option>
+        <option value="大正">大正</option>
+        <option value="昭和">昭和</option>
+        <option value="平成">平成</option>
+        <option value="令和">令和</option>
+        </select><br/>
+      <input type="text" name="Num" value="">年</p>
+    
+    <!-- name属性を指定 -->
+    <p><input type="submit" name="submitBtn" value="送信"></p>
+    <p>※西暦を表示できる期間：明治元年～今年</p>
+  </form>
+</body>
+</html>

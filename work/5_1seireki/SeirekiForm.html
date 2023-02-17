@@ -1,0 +1,45 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <h1 class="text-xl text-blue-500  mx-5">【西暦和暦変換】</h1>
+  <h2 class="mx-5">西暦を入力すると、和暦が表示されます</h2>
+  <br/>
+  <!-- action属性, method属性を指定 -->
+
+  <form action="SeirekiGet.php" method="get" class="w-full max-w-sm">
+    <!-- name属性を指定 -->
+    <div class="md:flex md:items-center mb-6">
+      <div class="md:w-30">
+        <label class="block text-gray-500 font-bold md:text-left mb-1 md:mb-0 mx-5" for="inline-full-name">
+          西暦
+        </label>
+      </div>
+      <div class="md:w-30">
+        <input
+          class="bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 w-20 mr-2"
+          id="inline-full-name" type="text" name="Num" value="2023">
+      </div>
+      <div class="md:w-40">
+        <label class="block text-gray-500 font-bold md:text-left mb-1 md:mb-0 pr-4" for="inline-full-name">
+          年
+        </label>
+      </div>
+
+    </div>
+    <!-- <p>西暦<br /><input type="text" name="Num" value="2023">年</p> -->
+
+    <!-- name属性を指定 -->
+    <button class="bg-blue-600 hover:bg-blue-500 text-white rounded px-4 py-2 mx-5">
+      <p><input type="submit" name="submitBtn" value="送信"></p>
+    </button>
+
+  </form>
+</body>
+
+</html>

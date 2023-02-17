@@ -1,0 +1,29 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h1>複利計算機</h1>
+  <h2>年利で複利計算します</h2>
+  <!-- action属性, method属性を指定 -->
+  <form action="Fukuri.php" method="get">
+    <div>
+      <label for="money">金額（万円）</label>
+      <input type="text" id="money" name="Money" value="1">
+    </div>
+    <div>
+      <label for="rate">年利（％）　</label>
+      <input type="text" id="rate" name="Rate" value="5.0">
+    </div>
+    <div>
+      <label for="term">期間（年）　</label>
+      <input type="text" id="term" name="Term" value="10">
+    </div>
+    <input type="submit" value="計算する">
+  </form>
+</body>
+
+</html>
