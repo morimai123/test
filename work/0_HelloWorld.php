@@ -1,6 +1,6 @@
 <?php
 
-$hello='Hello Hello';
+$hello='Hello Hello Hello';
 
 function say_hello() {
     
